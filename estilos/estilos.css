@@ -27,6 +27,8 @@ text-transform: uppercase;}
 color: beige;}
 .imagenUno {border-radius: 20px;}
 .imagenDos {border-radius: 20px;}
+#menuPpal {transition: all 2s;}
+#menuPpal:hover {font-size: 22px;}
 
 /* MENU.html */
 .mainMenu {margin: 30px;}
@@ -117,6 +119,11 @@ border-radius: 20px;}
     padding: 5px;
     flex-wrap: wrap;}
 .columna img {margin: 5px;}
+/* TRANSICION */
+.galeria img {
+    transition: width 2s;
+}
+.galeria img:hover {width: 103%}
 
 /* CONTACTO.html */
 .bodyContacto {margin: 0;
@@ -150,6 +157,13 @@ border-radius: 25px;}
 .imagenContacto {display: flex;
     justify-content: center;
     align-items: center;}
+.contactImg {
+transition: width 2s;
+}
+.contactImg:hover {
+width: 180px;
+}
+    
 
 /* DESKTOP, TABLET y MOVIL QUERIES GALERIA.html */
 @media (min-width:1024px) {
