@@ -4,17 +4,15 @@
     font-family: 'Macondo', cursive;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-scroll-behavior: smooth;}
+scroll-behavior: smooth;} 
 
 
 
 .insta {width: 30px;
 height: 3vh;
 margin-left: 3px;}
-.encabezadoIndex {background-color: rgb(13, 109, 109);
-border-radius: 20px;}
-.encabezadoMenu {background-color: rgb(13, 109, 109);
-border-radius: 20px;}
+header {background-image: linear-gradient(to bottom right, rgb(13, 109, 109) 40%, rgb(45, 213, 182));
+border-radius: 20px;}s
 .mainIndex {margin: 20px 10px 20px 10px;}
 #menuPpal :hover {background-color: rgb(13, 109, 109);}
 .menuFlex {list-style-type: none;
@@ -25,10 +23,18 @@ font-weight: 400;
 text-transform: uppercase;} 
 #menuPpal a {text-decoration: none;
 color: beige;}
-.imagenUno {border-radius: 20px;}
-.imagenDos {border-radius: 20px;}
 #menuPpal {transition: all 2s;}
 #menuPpal:hover {font-size: 22px;}
+.divImagen {padding-bottom: 25px;}
+
+/* GALERIA.HTML */
+#galeria img {width: 100%;
+height: 350px;}
+#galeria .col-lg-3 {padding: 15px;
+margin: 0 !important;}
+#galeria img:hover {
+    border: 5px solid #f7f7f7;
+}
 
 /* MENU.html */
 .mainMenu {margin: 30px;}
@@ -77,10 +83,10 @@ height: 300px;
 border-radius: 20px;}
 .mainNosotros p {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 1.5em;
-    padding: 3% 15%;}
+    line-height: 1.2em;
+    padding: 3% 8%;}
 .mainNosotros h1 {
     background-color: darkcyan;
     width: 100%;
@@ -89,9 +95,7 @@ border-radius: 20px;}
     font-size: 30px;
     text-align: center;
 color: beige;}
-.encabezadoNosotros {background-color: rgb(13, 109, 109);
-    border-radius: 20px;}
-.immagenNosotros {padding-top: 10px;
+.imagenNosotros {padding-top: 10px;
 padding-bottom: 10px;}
 
 /* FLEX NOSOTROS.html */
@@ -108,30 +112,19 @@ align-content: center;}
 padding: 0;
 width: 100%;
 height: 100vh;}
-.bodyGaleria header {background-color: rgb(13, 109, 109);
-    border-radius: 20px;}
 .bodyGaleria h1 {display: flex;
 justify-content: center;
 align-items: center;}
 .galeria img {width: 100%;
 border-radius: 20px;}
-.galeria {display: flex;
-    padding: 5px;
-    flex-wrap: wrap;}
-.columna img {margin: 5px;}
-/* TRANSICION */
-.galeria img {
-    transition: width 2s;
-}
-.galeria img:hover {width: 103%}
+
+
 
 /* CONTACTO.html */
 .bodyContacto {margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;}
-.bodyContacto header {background-color: rgb(13, 109, 109);
-        border-radius: 20px;}
 .bodyContacto h1 {display: flex;
     justify-content: center;}
 .tituloContacto {font-size: 30px;
@@ -158,70 +151,39 @@ border-radius: 25px;}
     justify-content: center;
     align-items: center;}
 .contactImg {
-transition: width 2s;
+    transition: width 2s;
 }
 .contactImg:hover {
 width: 180px;
 }
-    
 
 /* DESKTOP, TABLET y MOVIL QUERIES GALERIA.html */
-@media (min-width:1024px) {
+/* @media (min-width:1024px) {
     .columna {flex: 25%;}}
 @media (min-width:481px) and (max-width:1023px) {
     .columna {flex: 50%;}}
-@media (max-width:500px){
+@media (max-width:520px){
     .columna {flex:100%}
-}
-
+} */
 
 
 
 /* DESKTOP INDEX*/
 
 @media (min-width:1024px) {
-    .gridIndex {display: grid;
-        grid-template-areas: "titulo titulo titulo"
-        "menu menu menu"
-        "main main main"
-        "pie pie pie";
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 30vh 5vh 60vh 5vh;
-    }
-    .encabezadoIndex {grid-area: titulo;}
-    .navegacion {grid-area: menu;}
-    .mainIndex {grid-area: main;}
-    .pieDePagina {grid-area: pie;}
-    
     /* FLEX */
     .menuFlex {display: flex;
     flex-direction: row;
     justify-content: space-around;}
-    .tituloIndex h1 {display: flex;
-    align-content: center;}
     .logo {display: flex;
-    order: -1;}
-    .imgIndexUno {display: flex;
-    justify-content: flex-start;}
-    .parrafoIndex {display: flex;
-    order: 2;}
-    .imgIndexDos {display: flex;
-    order: 3;}
+    justify-content: center;
+    align-content: center;}
     .piePagina {display: flex;
     justify-content: flex-end;
     align-content: flex-end;}
-    .mainIndex {display: flex;
-    flex-flow: row nowrap;}
-    .encabezadoIndex {display: flex;}
-    
-    .tituloIndex h1 {font-size: 50px;
-        font-weight: bolder;
-        padding-top: 5vh;
-        color: antiquewhite;
-    margin-left: 50%;}
     .parrafoPpal {font-size: 30px;
         font-weight: 400;
-        line-height: 1em;
+        line-height: 1.5em;
         margin: 0 5px 0 5px;}
     .logoPpal {width: 200px;
             height: 25vh;
@@ -232,62 +194,25 @@ width: 180px;
                 width: 100%;
                 height: 100vh;}
 }
+    .imagen {width: 400px;
+        height: 400px;
+    border-radius: 20px;}
 
 /* TABLET INDEX*/
 
-@media (min-width:481px) and (max-width:1023px) {
-    
-    /* GRIDS */
-    .gridIndex {display: grid;
-        grid-template-areas: "titulo titulo"
-        "menu menu"
-        "main main"
-        "pie pie";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 35vh 10vh 50vh 5vh;}
-    .encabezadoIndex {grid-area: titulo;}
-    .navegacion {grid-area: menu;}
-    .mainIndex {grid-area: main;}
-    .pieDePagina {grid-area: pie;}
-    
+@media (min-width:521px) and (max-width:1023px) {
     /* FLEX */
     .menuFlex {display: flex;
     flex-direction: row;
     justify-content: space-around;}
-    .tituloIndex h1 {display: flex;
-    align-content: center;}
     .logo {display: flex;
-    order: -1;}
-    .imgIndexUno {display: flex;
-    justify-content: flex-start;}
-    .parrafoIndex {display: flex;
-    order: 2;}
+    align-content: center;
+    justify-content: center;}
     .piePagina {display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;}
-    .mainIndex {display: flex;
-    flex-flow: row nowrap;}
-    .encabezadoIndex {display: flex;}
+        justify-content: flex-end;
+        align-content: flex-end;}
     
     /* GENERALES */
-
-    .imagenDos {display: none;}
-    .tituloIndex h1 {font-size: 40px;
-        font-weight: bolder;
-        padding-top: 10vh;
-        color: antiquewhite;
-    margin-left: 30%;}
-    .parrafoPpal {font-size: 25px;
-        font-weight: 400;
-        line-height: 0.9em;
-        margin-top: 0px;
-    padding-top: 0px;}
-    .pieDePagina {margin: 0;}
-    .logoPpal {width: 200px;
-        height: 25vh;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        margin-left: 5%;}
     body {background-image: url(../estilos/fondo.jpg);
             width: 100%;
             height: 100vh;}
@@ -295,20 +220,7 @@ width: 180px;
 
 /* MOVIL INDEX */
 
-@media (max-width:480px) { 
-    /* GRIDS */
-    .gridIndex {display: grid;
-        grid-template-areas: "titulo"
-        "menu"
-        "main"
-        "pie";
-        grid-template-columns: 100%;
-        grid-template-rows: 0.7fr 0.5fr 1.5fr 5%;}
-    .encabezadoIndex {grid-area: titulo;}
-    .navegacion {grid-area: menu;}
-    .mainIndex {grid-area: main;}
-    .pieDePagina {grid-area: pie;}
-    
+@media (max-width:520px) { 
     /* FLEX */
     .menuFlex {display: flex;
     flex-direction: row;
@@ -316,47 +228,39 @@ width: 180px;
     .tituloIndex h1 {display: flex;
     align-content: center;}
     .logo {display: flex;
-    order: -1;}
-    .imgIndexUno {display: flex;
-flex-direction: column;}
-    .parrafoIndex {display: flex;
-flex-direction: column;}
+    align-content: center;
+    justify-content: center;}
     .piePagina {display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;}
-    .encabezadoIndex {display: flex;}
+        justify-content: flex-end;
+        align-content: flex-end;}
     
     /* GENERALES */
-
-    .imagenDos {display: none;}
-    .tituloIndex h1 {font-size: 40px;
-        font-weight: bolder;
-        padding-top: 10vh;
-        color: antiquewhite;
-    margin-left: 15%;}
-    .parrafoPpal {font-size: 25px;
+    .parrafoPpal {font-size: 20px;
         font-weight: 400;
-        line-height: 0.9em;
-        margin-top: 0px;
-    padding-top: 0px;}
-    .pieDePagina {margin: 0;}
-    .logoPpal {width: 200px;
-        height: 25vh;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        margin-left: 5%;}
+        line-height: 1em;
+        margin-top: 5px;
+        padding-top: 5px;}
+    .pieDePagina {margin: 0;
+    padding-top: 10px;
+margin-top: 10px;}
+    .logoPpal {width: 150px;
+        height: 150px;}
     body {background-image: url(../estilos/fondo.jpg);
         width: 100%;
         height: 100vh;}
 }
+.imagen {width: 100%;
+    height: 350px;
+    border-radius: 20px;}
+
 
 /* QUERIES MENU.html */
 @media (min-width:1024px) {
     /* FLEX MENU.html */
 
 #logo {display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;}
+    justify-content: center;
+    align-content: center;}
     .encabezadoMenu h1 {display: flex;
     justify-content: center;
     align-content: center;}
@@ -378,11 +282,13 @@ flex-direction: column;}
     .encabezadoMenu h1 {padding-bottom: 20px;}
 #logo {padding-top: 20px;}
 }
-@media (max-width:480px) {
+@media (max-width:520px) {
 #logo {display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;}
-    
+    justify-content: center;
+    align-content: center;}
+    .encabezadoMenu h1 {display: flex;
+        justify-content: center;
+        align-content: center;}
     /* GRIDS MENU.html */
     .mainMenu {display: grid;
     grid-template-areas: "pizza" 

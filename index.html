@@ -1,52 +1,67 @@
-<!DOCTYPE html>   
-<html lang="es">  
-            <head> 
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-                <title>
-                        Simplo Cocina
-                </title>  
-                    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-                    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-                    <link rel="stylesheet" href="estilos/estilos.css">
-            </head>
-            <body class="gridIndex">  
-                <header class="encabezadoIndex">
-                    <div class="tituloIndex"><h1>Bienvenidos a Simplococina</h1></div>
-                    <div class="logo"><a href="./index.html"><img class="logoPpal" src="imagenes/logoqqq-modified.png"  alt="logo de la empresa"></a></div>
-                </header>
-                <nav class="navegacion">
-                    <ul class="menuFlex">
-                        <li id="menuPpal"><a href="index.html">Inicio</a></li>
-                        <li id="menuPpal"><a href="./paginas/nosotros.html">Nosotros</a></li>
-                        <li id="menuPpal"><a href="./paginas/menu.html">Menú</a></li>
-                        <li id="menuPpal"><a href="./paginas/galeria.html">Galería</a></li>
-                        <li id="menuPpal"><a href="./paginas/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                <main class="mainIndex">
-                    <div class="imgIndexUno">
-                        <img class="imagenUno" src="./imagenes/ensalada.jpg" alt="foto de ensalada">
-                    </div>
-                    <div class="imgIndexDos">
-                        <img class="imagenDos" src="./imagenes/pizza.jpg" alt="foto de pizza">
-                    </div>
-                        <hr>
-                    <article class="parrafoIndex">
-                        <p class="parrafoPpal">Desde el 2020, junto a vos, somos Simplo, tu mejor opción semana a semana. Con nosotros comes como en casa, 
-                        todo hecho con nuestras propias manos, directamente a tu mesa, y sobre todo, BIEN ABUNDANTE! 
-                        Te vamos a sorprender con platos del día, alternativas para fechas puntuales o festivas, opciones clásicas, pedidos para eventos especiales, 
-                        pero siempre le vamos a estar agregando nuestro toque Gourmet que es lo que nos diferencia del resto.
-                        Si todavía no nos conocés, te invitamos a probar nuestros platos. Como no somos los únicos, decidimos ser los mejores!</p>
-                    </article>
-                </main> 
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <title>
+                Simplo Cocina
+        </title>  
+            <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+            <link rel="icon" href="./favicon.ico" type="image/x-icon">
+            <link rel="stylesheet" href="estilos/estilos.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
 
-                <footer class="pieDePagina">
-                    <div class="piePagina">
-                        <p class="pie"> Seguinos en <a href="https://www.instagram.com/simplococina/" target="_blank">  <img class="insta" src="./imagenes/insta.png" alt="logo instagram">  </a> </p>
-                    </div>
-                </footer>
-            </body>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="logo">
+            <a href="../index.html">
+                <img class="logoPpal" src="../imagenes/logoqqq-modified.png"  alt="logo de la empresa">
+            </a>
+            </div>
+            </header>
+            <nav class="navegacion">
+                <ul class="menuFlex">
+                    <li id="menuPpal"><a href="index.html">Inicio</a></li>
+                    <li id="menuPpal"><a href="./paginas/nosotros.html">Nosotros</a></li>
+                    <li id="menuPpal"><a href="./paginas/menu.html">Menú</a></li>
+                    <li id="menuPpal"><a href="./paginas/galeria.html">Galería</a></li>
+                    <li id="menuPpal"><a href="./paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div class="container-fluid">
+            <section class="main row">
+                <article class="col-xs-12 col-sm-12 col-md-7 col-lg-8">
+            <p class="parrafoPpal">
+                Desde el 2020, junto a vos, somos Simplo, tu mejor opción semana a semana. Con nosotros comes como en casa, 
+                todo hecho con nuestras propias manos, directamente a tu mesa, y sobre todo, BIEN ABUNDANTE! 
+                Te vamos a sorprender con platos del día, alternativas para fechas puntuales o festivas, opciones clásicas, pedidos para eventos especiales, 
+                pero siempre le vamos a estar agregando nuestro toque Gourmet que es lo que nos diferencia del resto.
+                Si todavía no nos conocés, te invitamos a probar nuestros platos. Como no somos los únicos, decidimos ser los mejores!
+            </p>
+                </article>
+            <aside class="col-xs-12 col-sm-12 col-md-5 col-lg-4">
+                <div class="divImagen">
+                    <img class="imagen" src="./imagenes/ensalada.jpg" alt="foto de ensalada">
+                </div>
+            </aside>
+                
+            </section>
+        </div>
+        <footer class="pieDePagina">
+            <div class="piePagina">
+                <p class="pie"> Seguinos en <a href="https://www.instagram.com/simplococina/" target="_blank">  <img class="insta" src="../imagenes/insta.png" alt="logo instagram">  </a> </p>
+            </div>
+        </footer>
 
-</html>   
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
