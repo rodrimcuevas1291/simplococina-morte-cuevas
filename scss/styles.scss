@@ -11,17 +11,21 @@ $color-letras: beige;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 scroll-behavior: smooth;}
+
+@mixin size ($anchura, $altura) {
+    width: $anchura;
+    height: $altura;
+}
+
 body {
+    @include size (100%, 100vh);
     background-image: url(./pexels-fwstudio-131683.jpg);
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
 }
 
 .pieDePagina {
     img {
-        width: 30px;
-        height: 3vh;
+        @include size (30px, 3vh);
         margin-left: 3px;
     }
 }
@@ -93,9 +97,8 @@ header {
             padding: 15px;
             margin: 0 !important;
             img {
-                width: 100%;
+                @include size (100%, 350px);
                 border-radius: 20px;
-                height: 350px;
                 &:hover {
                         border: 5px solid $color-letras;
                         }
@@ -121,46 +124,18 @@ header {
 }
 
 .menuEmpanadas {
-        border-radius: 20px;
-        padding: 20px;
-        background-color: $color-carta;
-        h3 {
-            font-size: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            font-size: 16px;
-            color: $color-letras;
-        }
+        @extend .menuPizza;
+        h3 {font-size: 20px;}
 }
 
 .menuBurga {
-            border-radius: 20px;
-            padding: 20px;
-            background-color: $color-carta;
-        h4 {
-            font-size: 20px;
-        }
-        ul {
-            list-style-type: none;
-            font-size: 16px;
-            color: $color-letras;
-        }
+        @extend .menuPizza;
+        h4 {font-size: 20px;}
 }
 
 .menuPasteleria {
-    border-radius: 20px;
-    padding: 20px;
-    background-color: $color-carta;
-    h5 {
-        font-size: 20px;
-    }
-    ul {
-        list-style-type: none;
-        font-size: 16px;
-        color: $color-letras;
-    }
+    @extend .menuPizza;
+    h5 {font-size: 20px;}
 }
 
 #sub {
@@ -179,8 +154,7 @@ header {
         justify-content: center;
         align-content: center;
         img {
-            width: 300px;
-            height: 300px;
+            @include size (300px, 300px);
             border-radius: 20px;
         }
     }
@@ -241,8 +215,7 @@ header {
         justify-content: center;
         align-items: center;
         img {
-            width: 150px;
-            height: 150px;
+            @include size (150px, 150px);
             max-width: 200px;
             max-height: 200px;
             border-radius: 25px;
@@ -280,8 +253,7 @@ header {
     header {
         div {
             img {
-                width: 180px;
-                height: 180px;
+                @include size (180px, 180px);
                 margin-top: 2.5vh;
                 margin-bottom: 2.5vh;
                 margin-left: 5%;
@@ -289,8 +261,7 @@ header {
             }
             }
     .imagen {
-                width: 400px;
-                height: 400px;
+                @include size (400px, 400px);
                 border-radius: 20px;
                 }
 }
@@ -330,14 +301,13 @@ header {
                     }
     header {
         div {
-            img {width: 150px;
-            height: 150px;
+            img {
+                @include size (150px, 150px);
                 }
             }
             }
     .imagen {
-        width: 100%;
-        height: 350px;
+        @include size (100%, 350px);
         border-radius: 20px;
                 }
 }
