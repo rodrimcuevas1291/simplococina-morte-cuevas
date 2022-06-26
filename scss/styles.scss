@@ -20,7 +20,7 @@ scroll-behavior: smooth;}
 body {
     @include size (100%, 100vh);
     background-image: url(./pexels-fwstudio-131683.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .pieDePagina {
@@ -269,11 +269,25 @@ header {
 @media (min-width:521px) and (max-width:1023px)  {
     .parrafoIndex {
         p {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 400;
-            line-height: 1.2em;
+            line-height: 1.1em;
             color: $color-letras;
             margin: 10px;}
+                }
+    header {
+        div {
+            img {
+                @include size (180px, 180px);
+                            margin-top: 2.5vh;
+                            margin-bottom: 2.5vh;
+                            margin-left: 5%;
+                }
+            }
+            }
+    .imagen {
+                @include size (350px, 350px);
+                border-radius: 20px;
                 }
     }
 
@@ -311,6 +325,8 @@ header {
         border-radius: 20px;
                 }
 }
+
+//GALERIA QUERIES
 
 @media (min-width:1024px) {
     #menu {

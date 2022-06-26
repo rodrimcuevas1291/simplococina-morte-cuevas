@@ -1,4 +1,5 @@
 agregué mixin para width y height
 agregué extends para optimizar código para galería.html
+borré codigos y clases innecesarios o no utilizados en los html y scss
 agregué keywords en cada una de las páginas
 reduje peso de cada una de las imágenes
