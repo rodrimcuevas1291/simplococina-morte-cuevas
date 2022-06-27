@@ -1,3 +1,4 @@
+/* GENERALES */
 @import url("https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,100;0,400;0,700;1,100&display=swap");
 * {
   margin: 0px;
@@ -6,6 +7,17 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+/* MAPA */
+.green {
+  background-color: green;
+  color: antiquewhite;
+}
+
+.red {
+  background-color: red;
+  color: antiquewhite;
 }
 
 body {

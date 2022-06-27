@@ -1,4 +1,5 @@
-// GENERALES
+/* GENERALES */
+
 $color-primario: rgb(13, 109, 109);
 $color-carta: rgb(44, 117, 92);
 $color-letras: beige;
@@ -11,6 +12,15 @@ $color-letras: beige;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 scroll-behavior: smooth;}
+
+/* MAPA */
+
+@each $color in green, red {
+    .#{$color}{
+        background-color: #{$color};
+        color: antiquewhite;
+    }
+}
 
 @mixin size ($anchura, $altura) {
     width: $anchura;
