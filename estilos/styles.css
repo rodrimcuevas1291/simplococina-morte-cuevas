@@ -54,29 +54,6 @@ header div {
   margin: 20px 10px 20px 10px;
 }
 
-.navegacion ul {
-  list-style-type: none;
-  background-color: cadetblue;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.navegacion ul li {
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  transition: all 2s;
-}
-.navegacion ul li:hover {
-  background-color: rgb(13, 109, 109);
-  font-size: 22px;
-}
-.navegacion ul li a {
-  text-decoration: none;
-  color: beige;
-}
-
 .divImagen {
   padding-bottom: 25px;
 }
@@ -101,34 +78,34 @@ header div {
 
 .menuPizza, .menuPasteleria, .menuBurga, .menuEmpanadas {
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
   background-color: rgb(44, 117, 92);
 }
 .menuPizza h2, .menuPasteleria h2, .menuBurga h2, .menuEmpanadas h2 {
-  font-size: 20px;
+  font-size: 22px;
 }
 .menuPizza ul, .menuPasteleria ul, .menuBurga ul, .menuEmpanadas ul {
-  list-style-type: none;
-  font-size: 16px;
+  list-style-type: circle;
+  font-size: 20px;
   color: beige;
 }
 
 .menuEmpanadas h3 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .menuBurga h4 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .menuPasteleria h5 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 #sub {
-  font-size: 20px;
+  font-size: 22px;
   color: black;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .mainNosotros div {
@@ -284,14 +261,6 @@ header div {
     width: 100%;
     height: 350px;
     border-radius: 20px;
-  }
-}
-@media (min-width: 1024px) {
-  #menu article {
-    row-gap: 5px;
-  }
-  header div {
-    padding-top: 20px;
   }
 }
 

@@ -64,30 +64,7 @@ header {
     margin: 20px 10px 20px 10px;
 }
 
-.navegacion {
-            ul { 
-                list-style-type: none;
-                background-color: cadetblue;
-                border-radius: 20px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                li {
-                    font-size: 20px;
-                    font-weight: 400;
-                    text-transform: uppercase;
-                    transition: all 2s;
-                    &:hover {
-                        background-color: $color-primario;
-                        font-size: 22px;
-                    }
-                    a {
-                        text-decoration: none;
-                        color: $color-letras;
-                    }
-                }
-            }
-}
+
 
 .divImagen {
     padding-bottom: 25px;
@@ -121,37 +98,37 @@ header {
 
 .menuPizza {
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
     background-color: $color-carta;
         h2 {
-        font-size: 20px;
+        font-size: 22px;
         }
         ul {
-        list-style-type: none;
-        font-size: 16px;
+        list-style-type: circle;
+        font-size: 20px;
         color: $color-letras;
         }
 }
 
 .menuEmpanadas {
         @extend .menuPizza;
-        h3 {font-size: 20px;}
+        h3 {font-size: 22px;}
 }
 
 .menuBurga {
         @extend .menuPizza;
-        h4 {font-size: 20px;}
+        h4 {font-size: 22px;}
 }
 
 .menuPasteleria {
     @extend .menuPizza;
-    h5 {font-size: 20px;}
+    h5 {font-size: 22px;}
 }
 
 #sub {
-    font-size: 20px;
+    font-size: 22px;
     color: black;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 // NOSOTROS.html
@@ -334,20 +311,4 @@ header {
         @include size (100%, 350px);
         border-radius: 20px;
                 }
-}
-
-//GALERIA QUERIES
-
-@media (min-width:1024px) {
-    #menu {
-        article {
-            row-gap: 5px;
-            }
-        }
-        header {
-            div {
-            padding-top: 20px;
-                }
-            }
-            
 }
