@@ -53,14 +53,22 @@ header div {
 .mainIndex {
   margin: 20px 10px 20px 10px;
 }
-
-.divImagen {
-  padding-bottom: 25px;
-}
-
-.parrafoIndex {
-  background-color: rgb(13, 109, 109);
+.mainIndex h1 {
+  background-color: rgb(28, 58, 58);
+  width: 100%;
   border-radius: 10px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: beige;
+}
+.mainIndex .parrafo {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.4em;
+  padding: 3% 8%;
+  color: beige;
 }
 
 #galeria .row div {
@@ -120,7 +128,7 @@ header div {
   height: 300px;
   border-radius: 20px;
 }
-.mainNosotros h1 {
+.mainNosotros h2 {
   background-color: rgb(28, 58, 58);
   width: 100%;
   border-radius: 10px;
@@ -194,13 +202,6 @@ header div {
 }
 
 @media (min-width: 1024px) {
-  .parrafoIndex p {
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 1.7em;
-    margin: 0 5px 0 5px;
-    color: beige;
-  }
   header div img {
     width: 180px;
     height: 180px;
@@ -208,20 +209,12 @@ header div {
     margin-bottom: 2.5vh;
     margin-left: 5%;
   }
-  .imagen {
-    width: 400px;
-    height: 400px;
-    border-radius: 20px;
+  .card img {
+    width: 100%;
+    height: 300px;
   }
 }
 @media (min-width: 521px) and (max-width: 1023px) {
-  .parrafoIndex p {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.1em;
-    color: beige;
-    margin: 10px;
-  }
   header div img {
     width: 180px;
     height: 180px;
@@ -229,25 +222,32 @@ header div {
     margin-bottom: 2.5vh;
     margin-left: 5%;
   }
-  .imagen {
-    width: 350px;
-    height: 350px;
-    border-radius: 20px;
+  .card img {
+    width: 100%;
+    height: 300px;
+  }
+  .mainIndex {
+    margin: 20px 10px 20px 10px;
+  }
+  .mainIndex h1 {
+    background-color: rgb(28, 58, 58);
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    color: beige;
+  }
+  .mainIndex .parrafo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1em;
+    padding: 3% 8%;
+    color: beige;
   }
 }
 @media (max-width: 520px) {
-  .tituloIndex h1 {
-    display: flex;
-    align-content: center;
-  }
-  .parrafoIndex p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1em;
-    margin-top: 5px;
-    padding-top: 5px;
-    color: beige;
-  }
   .pieDePagina {
     margin: 0;
     padding-top: 10px;
@@ -257,10 +257,29 @@ header div {
     width: 150px;
     height: 150px;
   }
-  .imagen {
+  .card img {
     width: 100%;
-    height: 350px;
-    border-radius: 20px;
+    height: 300px;
+  }
+  .mainIndex {
+    margin: 20px 10px 20px 10px;
+  }
+  .mainIndex h1 {
+    background-color: rgb(28, 58, 58);
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: beige;
+  }
+  .mainIndex .parrafo {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1em;
+    padding: 3% 8%;
+    color: beige;
   }
 }
 

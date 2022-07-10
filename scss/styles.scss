@@ -62,18 +62,26 @@ header {
 
 .mainIndex {
     margin: 20px 10px 20px 10px;
-}
-
-
-
-.divImagen {
-    padding-bottom: 25px;
-}
-
-.parrafoIndex {
-    background-color: $color-primario;
-    border-radius: 10px;
+        h1 {
+        background-color: rgb(28, 58, 58);
+        width: 100%;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        color: $color-letras;
             }
+        .parrafo {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1.4em;
+        padding: 3% 8%;
+        color: $color-letras;
+            }
+}
+
+
 
 
 // GALERIA.html
@@ -145,7 +153,7 @@ header {
             border-radius: 20px;
         }
     }
-    h1 {
+    h2 {
         background-color: rgb(28, 58, 58);
         width: 100%;
         border-radius: 10px;
@@ -229,14 +237,6 @@ header {
 // INDEX.html
 
 @media (min-width:1024px) {
-    .parrafoIndex {
-                p {font-size: 25px;
-        font-weight: 400;
-        line-height: 1.7em;
-        margin: 0 5px 0 5px;
-        color: $color-letras;
-        }
-                }
     header {
         div {
             img {
@@ -247,21 +247,15 @@ header {
                 }
             }
             }
-    .imagen {
-                @include size (400px, 400px);
-                border-radius: 20px;
+    .card {
+        img {
+            width: 100%;
+            height: 300px;
                 }
+            }
 }
 
 @media (min-width:521px) and (max-width:1023px)  {
-    .parrafoIndex {
-        p {
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 1.1em;
-            color: $color-letras;
-            margin: 10px;}
-                }
     header {
         div {
             img {
@@ -272,29 +266,35 @@ header {
                 }
             }
             }
-    .imagen {
-                @include size (350px, 350px);
-                border-radius: 20px;
+    .card {
+        img {
+            width: 100%;
+            height: 300px;
+            }
+        }
+    .mainIndex {
+        margin: 20px 10px 20px 10px;
+            h1 {
+            background-color: rgb(28, 58, 58);
+            width: 100%;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 35px;
+            text-align: center;
+            color: $color-letras;
+                }
+            .parrafo {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.1em;
+            padding: 3% 8%;
+            color: $color-letras;
+                    }
                 }
     }
 
 @media (max-width:520px) {
-    .tituloIndex {
-        h1 {
-        display: flex;
-        align-content: center;
-            }
-                }
-    .parrafoIndex  {
-                p{
-                    font-size: 20px;
-                    font-weight: 400;
-                    line-height: 1em;
-                    margin-top: 5px;
-                    padding-top: 5px;
-                    color: $color-letras;
-                    }
-                }
     .pieDePagina {
                     margin: 0;
                     padding-top: 10px;
@@ -307,8 +307,30 @@ header {
                 }
             }
             }
-    .imagen {
-        @include size (100%, 350px);
-        border-radius: 20px;
+    .card {
+        img {
+            width: 100%;
+            height: 300px;
+            }
+        }
+    .mainIndex {
+            margin: 20px 10px 20px 10px;
+                h1 {
+                background-color: rgb(28, 58, 58);
+                width: 100%;
+                border-radius: 10px;
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                color: $color-letras;
+                    }
+                .parrafo {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1em;
+                padding: 3% 8%;
+                color: $color-letras;
+                        }
                 }
 }
