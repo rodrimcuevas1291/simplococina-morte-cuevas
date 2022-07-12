@@ -98,6 +98,8 @@ footer p {
 }
 .menuPizza h2, .menuPasteleria h2, .menuBurga h2, .menuEmpanadas h2 {
   font-size: 22px;
+  color: beige;
+  font-weight: bold;
 }
 .menuPizza ul, .menuPasteleria ul, .menuBurga ul, .menuEmpanadas ul {
   list-style-type: circle;
@@ -107,14 +109,20 @@ footer p {
 
 .menuEmpanadas h3 {
   font-size: 22px;
+  color: beige;
+  font-weight: bold;
 }
 
 .menuBurga h4 {
   font-size: 22px;
+  color: beige;
+  font-weight: bold;
 }
 
 .menuPasteleria h5 {
   font-size: 22px;
+  color: beige;
+  font-weight: bold;
 }
 
 #sub {

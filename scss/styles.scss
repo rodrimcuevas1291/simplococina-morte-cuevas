@@ -115,6 +115,8 @@ footer {
     background-color: $color-carta;
         h2 {
         font-size: 22px;
+        color: $color-letras;
+        font-weight: bold;
         }
         ul {
         list-style-type: circle;
@@ -125,17 +127,23 @@ footer {
 
 .menuEmpanadas {
         @extend .menuPizza;
-        h3 {font-size: 22px;}
+        h3 {font-size: 22px;
+        color: $color-letras;
+        font-weight: bold;}
 }
 
 .menuBurga {
         @extend .menuPizza;
-        h4 {font-size: 22px;}
+        h4 {font-size: 22px;
+        color: $color-letras;
+        font-weight: bold;}
 }
 
 .menuPasteleria {
     @extend .menuPizza;
-    h5 {font-size: 22px;}
+    h5 {font-size: 22px;
+    color: $color-letras;
+    font-weight: bold;}
 }
 
 #sub {
